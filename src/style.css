@@ -1,1 +1,59 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-image: url(https://images.pexels.com/photos/279009/pexels-photo-279009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.card {
+  display: inline-block !important;
+  background-color: white;
+  margin: auto;
+  height: 500px;
+  width: 300px;
+  padding: 20px;
+  padding-top: 180px;
+  border-radius: 5px;
+  border: 1px solid black;
+  filter: drop-shadow(2px 4px 8px #575757);
+  position: relative;
+  font-size: 80px;
+}
+.card::after {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 80px;
+}
+
+.card::before {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 80px;
+}
+
+.card.spades::before,
+.card.spades::after {
+  content: "\2660";
+  color: black;
+  filter: drop-shadow(2px 4px 8px #575757);
+}
+.card.hearts::before,
+.card.hearts::after {
+  content: "\2665";
+  color: red;
+  filter: drop-shadow(2px 4px 8px #575757);
+}
+.card.clubs::before,
+.card.clubs::after {
+  content: "\2663";
+  color: black;
+  filter: drop-shadow(2px 4px 8px #575757);
+}
+.card.diams::before,
+.card.diams::after {
+  content: "\2666";
+  color: red;
+  filter: drop-shadow(2px 4px 8px #575757);
+}
