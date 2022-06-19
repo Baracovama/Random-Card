@@ -51,8 +51,8 @@ body {
   color: black;
   filter: drop-shadow(2px 4px 8px #575757);
 }
-.card.diams::before,
-.card.diams::after {
+.card.diamonds::before,
+.card.diamonds::after {
   content: "\2666";
   color: red;
   filter: drop-shadow(2px 4px 8px #575757);
